@@ -1,0 +1,59 @@
+###
+GET http://127.0.0.1:8000/doctors/
+Accept: application/json
+
+
+###
+POST http://localhost:8000/doctors/
+Content-Type: application/json
+
+{
+    "docter_name":"Prijul",
+    "specialization":"Ortho",
+    "experience":9,
+    "hospital":"MIMS",
+    "consultation_fees":500,
+    "available":"False"
+}
+
+
+###
+GET http://localhost:8000/doctor/2
+Content-Type: application/json
+
+
+###
+PUT http://localhost:8000/doctor/1/
+Content-Type: application/json
+
+{
+    "docter_name":"Kashyap",
+    "specialization":"Oncology",
+    "experience":5,
+    "hospital":"MIMS",
+    "consultation_fees":500,
+    "available":"False"
+}
+
+
+###
+DELETE http://localhost:8000/doctor/1/
+Accept: application/json
+
+
+###
+GET http://localhost:8000/appointments/
+Accept: application/json 
+
+
+###
+POST http://localhost:8000/appointments/
+Content-Type: application/json
+
+{
+    "patient_name":"Kaushik",
+    "phone":"34567834567",
+    "doctor_id":3,
+    "Appointment_date":"2026-10-28",
+    "problem":"Back Pain"
+}
